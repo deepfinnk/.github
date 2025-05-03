@@ -18,7 +18,6 @@ This project is divided into three main repositories:
     *   **Purpose:** Provides the user interface for viewing account balances, initiating actions, and interacting with the AI assistant via chat.
     *   **Technology:** Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, v0.dev.
     *   **Repository:** [https://github.com/deepfinnk/webapp](https://github.com/deepfinnk/webapp)
-    *   **Deployment:** [View Live Demo (Vercel)](https://vercel.com/adamcretu36-gmailcoms-projects/v0-new-project-ul4s8obpkvs) *(Note: Link might be specific to initial deployment)*
 
 2.  **AI Research Agent (`research-agent`)**
     *   **Purpose:** Handles natural language understanding, financial plan generation using AI, and orchestrates communication between the frontend and the Bunq service.
@@ -26,8 +25,8 @@ This project is divided into three main repositories:
     *   **Repository:** [https://github.com/deepfinnk/research-agent](https://github.com/deepfinnk/research-agent)
 
 3.  **Bunq MCP Service (`bunq-service`)**
-    *   **Purpose:** Acts as a secure interface to the Bunq API, executing the financial tasks requested by the AI agent. Uses a Multi-Agent Collaboration Platform (MCP) approach.
-    *   **Technology:** Python, Flask, Camel AI, Bunq SDK, Docker.
+    *   **Purpose:** Acts as an interface to the Bunq API, executing the financial tasks requested by the AI agent. Uses a Model Contex Protocol (MCP) approach.
+    *   **Technology:** Python, Flask, Camel AI, Bunq SDK.
     *   **Repository:** [https://github.com/deepfinnk/bunq-service](https://github.com/deepfinnk/bunq-service)
 
 ## Getting Started
