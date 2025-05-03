@@ -39,26 +39,3 @@ To run the entire DeepFinnk system, you will need to set up and run each compone
 *   [Bunq Service Setup](https://github.com/deepfinnk/bunq-service#setup)
 
 Ensure all necessary environment variables (like API keys and service URLs) are configured correctly for the components to communicate.
-
-## Architecture Overview (Conceptual)
-
-```mermaid
-graph TD
-    A[User via Frontend (Next.js)] --> B(AI Agent Service (Flask));
-    B --> C{Financial Query / Goal};
-    B --> D[Plan Generation (Camel AI)];
-    D --> E{Generated Plan};
-    B --> F(Bunq MCP Service (Flask));
-    F --> G{Execute Plan Actions};
-    G --> H[Bunq API];
-    H --> F;
-    F --> B;
-    B --> A;
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#ccf,stroke:#333,stroke-width:2px
-    style F fill:#ccf,stroke:#333,stroke-width:2px
-    style H fill:#ff9,stroke:#333,stroke-width:2px
-```
-
-*(This is a simplified representation. Refer to individual repositories for detailed architecture.)*
